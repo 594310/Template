@@ -54,7 +54,7 @@
         color: #fff;
         display: inline-block;
         padding: 5px 20px; }
-      .site-navbar .site-navigation .site-menu a {
+      .site-navbar .-navigation .site-menu a {
         text-decoration: none !important;
         display: inline-block;
         position: relative; }
@@ -123,9 +123,10 @@
             -o-transition: 0s all;
             transition: 0s all;
             color: #343a40; }
-            .site-navbar .site-navigation .site-menu .has-children .dropdown a.active {
+            .site-navbar .site-navigation .site-menu .has-children .dropdown a .active {
               background: #ebeef0;
-              color: #89ba16; }
+              color: #0085ff; }
+
           .site-navbar .site-navigation .site-menu .has-children .dropdown > li {
             list-style: none;
             padding: 0;
@@ -142,7 +143,7 @@
               right: 20px; }
             .site-navbar .site-navigation .site-menu .has-children .dropdown > li.has-children > a.active {
               background: #ebeef0;
-              color: #89ba16; }
+              color: #0085FF; }
             .site-navbar .site-navigation .site-menu .has-children .dropdown > li.has-children > .dropdown, .site-navbar .site-navigation .site-menu .has-children .dropdown > li.has-children > ul {
               left: 100%;
               top: 0; }
@@ -176,7 +177,7 @@
           -o-transition: .3s all ease;
           transition: .3s all ease; }
         .site-navbar .site-navigation .site-menu.site-menu-dark > li > a:hover, .site-navbar .site-navigation .site-menu.site-menu-dark > li > a.active {
-          color: #89ba16;
+          color: #0085ff;
           position: relative; }
           .site-navbar .site-navigation .site-menu.site-menu-dark > li > a:hover:after, .site-navbar .site-navigation .site-menu.site-menu-dark > li > a.active:after {
             -webkit-transform: scale(1);
@@ -392,7 +393,7 @@
           -o-transition: .3s all ease;
           transition: .3s all ease; }
         .sticky-wrapper.is-sticky .site-navbar .site-menu > li > a:hover, .sticky-wrapper.is-sticky .site-navbar .site-menu > li > a.active {
-          color: #89ba16;
+          color: #0085ff;
           position: relative; }
           .sticky-wrapper.is-sticky .site-navbar .site-menu > li > a:hover:after, .sticky-wrapper.is-sticky .site-navbar .site-menu > li > a.active:after {
             -webkit-transform: scale(1);
@@ -1669,6 +1670,11 @@ h1, h2, h3, h4 {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); }
 
+/* navbar 調整 */
+@media screen and (min-weight:1199px) {
+
+}
+
 
 /* 這是slide廣告的樣式--開始 */
   .box {
@@ -1788,12 +1794,27 @@ h1, h2, h3, h4 {
 .film-intro{
   float:left;
   background-color: rgb(0, 0, 0,0.47);
+  border-radius: 0px 20px 20px 0px;
+  margin-left: -15px;
+  height: 97.5%;
 }
 .film-intro h3 , .film-intro h5{
   color: white;
   display: block;
 }
+.active{
+  font-size:1.2rem ;
+}
 
+@media screen and (max-width:1199px) {
+  .film-intro{
+    height: 84.5%;
+    overflow-y: overlay;
+  }
+  .active{
+    font-size: 1.2rem !important;
+  }
+}
 @media screen and (max-width:992px) {
   .col-search{
     margin-left: 0px;
@@ -1812,27 +1833,7 @@ h1, h2, h3, h4 {
     max-height: 200px;
     overflow-y: overlay;
     border-radius: 12px 12px 12px 12px;
-
-    ::-webkit-scrollbar {
-
-      width: 7px;
-    }
-
-    ::-webkit-scrollbar-button {
-      background: transparent;
-      border-radius: 4px;
-    }
-    ::-webkit-scrollbar-track-piece {
-      background: transparent;
-    }
-    ::-webkit-scrollbar-thumb {
-      border-radius: 4px;
-      background-color: rgba(0, 0, 0, 0.4);
-      border: 1px solid slategrey;
-    }
-    ::-webkit-scrollbar-track {
-      box-shadow: transparent;
-    }
+    margin-left: 0px;
   }
 
 }
