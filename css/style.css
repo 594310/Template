@@ -449,7 +449,7 @@ h1, h2, h3, h4 {
   .home-section > .container {
     z-index: 2;
     position: relative; }
-  .home-section h1 {
+  .home-section h1{
     font-size: 3rem;
     color: #fff;
     font-weight: 200; }
@@ -768,9 +768,9 @@ h1, h2, h3, h4 {
   cursor: inherit;
   display: block; }
 
-.custom-breadcrumbs a {
-  color: #89ba16; }
-  .custom-breadcrumbs a:hover {
+.custom-breadcrumbs a , .rounded-pill a , .cause-title .title , .cause-need .title{
+  color: #0085ff; }
+  .custom-breadcrumbs a:hover , .more-cause h5{
     color: #fff; }
 
 .custom-breadcrumbs .slash {
@@ -826,7 +826,7 @@ h1, h2, h3, h4 {
 .text-muted {
   color: #d5d5d5 !important; }
 
-.section-title {
+.section-title ,.important-mess h2 ,.title{
   font-size: 2rem;
   font-weight: 700; }
 
@@ -916,7 +916,11 @@ h1, h2, h3, h4 {
   box-shadow: none !important; }
 
 .btn.btn-primary {
-  color: #fff; }
+  background-color: #0085ff;
+  color: #fff;
+  font-weight: 800;
+
+ }
   .btn.btn-primary:hover {
     background: #90c317;
     border-color: #90c317; }
@@ -1008,8 +1012,8 @@ h1, h2, h3, h4 {
     width: 70px;
     height: 70px;
     border-radius: 50%;
-    border: 1px solid #89ba16;
-    background: #89ba16;
+    border: 1px solid #0085ff;
+    background: #0085ff;
     margin-bottom: 1.5rem;
     -webkit-transition: .3s all ease;
     -o-transition: .3s all ease;
@@ -1048,13 +1052,20 @@ h1, h2, h3, h4 {
     top: -20px;
     -webkit-box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.2);
     box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.2); }
+    
     @media (max-width: 991.98px) {
       .block__62849 .block__16443:hover {
-        top: 0; } }
+        top: 0; } 
+      .important-mess , .buy-mess{
+        border-top:#656565 1px solid;
+      }
+      }
+
     .block__62849 .block__16443:hover .custom-icon {
       background: transparent; }
       .block__62849 .block__16443:hover .custom-icon [class^="icon-"], .block__62849 .block__16443:hover .custom-icon [class^="flaticon-"] {
-        color: #89ba16; }
+        color: #0085ff; }
+    
 
 .block__87154 {
   position: relative;
@@ -1509,14 +1520,23 @@ h1, h2, h3, h4 {
 
 .block__18514 .block__47528 li {
   margin-bottom: 10px; }
-  .block__18514 .block__47528 li span {
+  .block__18514 .block__47528 li span , .cause-intro h5{
     font-weight: 700;
     color: #000; }
   .block__18514 .block__47528 li a {
     display: block; 
   }
+.cause-intro p{
+  text-indent: 2.5rem;
+  font-weight: 700;
+  color: #000;
+}
 
-.sidebar-box {
+.cause-intro h5 , .more-cause h5{
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+  .sidebar-box {
   margin-bottom: 30px;
   padding: 25px;
   font-size: 15px;
@@ -1556,7 +1576,7 @@ h1, h2, h3, h4 {
   box-shadow: none !important; }
 
 .form-control:active, .form-control:focus {
-  border-color: #89ba16 !important; }
+  border-color: #0085ff !important; }
 
 .comment-form-wrap {
   clear: both; }
@@ -1671,23 +1691,33 @@ h1, h2, h3, h4 {
   transform: translate(-50%, -50%); }
 
 /* navbar 調整 */
-@media screen and (min-weight:1199px) {
-
-}
 
 
 /* 這是slide廣告的樣式--開始 */
+.head {
+  padding-bottom: 20px;
+  width: 100%;
+  height: 2%;
+  background-color: #0085FF;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
   .box {
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    border: solid 2px #bebebe !important;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border: solid 2px #bebebe !important;
 }
 
 .context {
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+  border: solid 2px #bebebe;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.context h3{
+  font-size: 1.7rem;
 }
 
 .slide-button {
@@ -1707,14 +1737,27 @@ h1, h2, h3, h4 {
 .slide-button a:hover {
     text-decoration: none;
 }
-.fw-bold a{
+.fw-bold a ,.important-mess p{
   color: #0085FF;
     font-weight: 900;
   }
-  .slide-h3 {
+  .slide-h3 , .item h3{
     font-weight: 900;
 }
 /* 這是slide廣告頁面--結束 */
+
+/* 課程管理 開始 */
+.rounded-pill{
+  border: #0085FF 0.5px solid;
+}
+
+.rounded-pill a:hover{
+  color: #fff;
+  text-decoration:none;
+}
+.rounded-pill:hover{
+  background-color: #0085FF;
+}
 
 /* 這是商城的css開始 */
 .cause-p1{
@@ -1723,6 +1766,19 @@ h1, h2, h3, h4 {
   margin-bottom: -5px;
   margin-top: -8px;
 }
+
+.pay-content .context{
+  border: 0px solid #fff;
+}
+
+.btn-secondary{
+  background-color: transparent;
+  color: #0085FF;
+  border: #0085FF solid 1px;
+}
+  .btn-secondary:hover{
+    background-color: #D00000;
+  }
 
 .cause-span1{
   color: #fff;
@@ -1755,10 +1811,13 @@ h1, h2, h3, h4 {
   color: #656565;
   margin-bottom: 0px;
 }
-.img-littlelogo{
-  width: 30px;
+.teacher-content img{
   height: 30px;
-  border-radius: 15px;
+  width: 30px;
+}
+
+.img-littlelogo{
+  border-radius: 50%;
   vertical-align: middle;
 }
 .card-contentstyle{
@@ -1801,8 +1860,51 @@ h1, h2, h3, h4 {
   color: white;
   display: block;
 }
-.active{
+.active {
   font-size:1.2rem ;
+}
+.block__47528 .active{
+  font-size: 1.3rem;
+}
+.cause-intro{
+  width: 93%;
+  height: 350px;
+  border:#A4A4A4 2px solid;
+  border-radius: 20px;
+  overflow-y: overlay;
+}
+
+
+.more-cause div{
+  height: 150px;
+  width: 95%;
+  margin: auto;
+  border-radius: 15px;
+}
+.more-cause h5{
+  position: absolute;
+  padding-left: 50px;
+  padding-top: 70px;
+}
+.cause-intro::-webkit-scrollbar {
+  width: 0.5em;
+}
+.cause-intro::-webkit-scrollbar-button{
+  background: transparent;
+}
+.cause-intro::-webkit-scrollbar-track-piece{
+  background: transparent;
+}
+.cause-intro::-webkit-scrollbar-thumb {
+  background-color: #0085ff;
+  border-radius: 20px;
+}
+@media screen and (min-width:1200px) {
+  .cause-need{
+    margin-top: 100px;}
+  .pay-allow{
+    width: 75%;
+  }
 }
 
 @media screen and (max-width:1199px) {
@@ -1813,6 +1915,8 @@ h1, h2, h3, h4 {
   .active{
     font-size: 1.2rem !important;
   }
+  .cause-need{
+    margin-top: 50px;}
 }
 @media screen and (max-width:992px) {
   .col-search{
@@ -1837,3 +1941,73 @@ h1, h2, h3, h4 {
 
 }
 /* 這是商城的css結束 */
+
+/* 找工作css 開始 */
+.job-search{
+  width: 90%;
+}
+.wrapper{
+  display:inline-flex;
+  height: 37px;
+  width: 250px;
+  border-radius: 5px;
+}
+.wrapper .option{
+  height: 100%;
+  width: 200px;
+  margin: 0 0 0 10px;
+  display:flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 2px solid lightgrey;
+  transition: all 0.3s ease;
+}
+.wrapper .option .dot{
+  height: 20px;
+  width: 20px;
+  background: #fff;
+  border-radius: 50%;
+  position: relative;
+}
+.wrapper .option .dot::before{
+  position: absolute;
+  content: "";
+  top: 4px;
+  left: 4px;
+  width: 12px;
+  height: 12px;
+  background: #0085ff;
+  border-radius: 50%;
+  opacity: 0;
+  transform: scale(1.5);
+  transition: all 0.3s ease;
+}
+input[type="radio"]{
+  display: none;
+}
+
+#option-1:checked:checked ~ .option-1,
+#option-2:checked:checked ~ .option-2{
+  border-color: #0085ff;
+  background: #0085ff;
+}
+#option-1:checked:checked ~ .option-1 .dot,
+#option-2:checked:checked ~ .option-2 .dot{
+  background: #fff;
+}
+#option-1:checked:checked ~ .option-1 .dot::before,
+#option-2:checked:checked ~ .option-2 .dot::before{
+  opacity: 1;
+  transform: scale(1);
+}
+.wrapper .option span{
+  font-size: 16px;
+  color: #fff;
+}
+#option-1:checked:checked ~ .option-1 span,
+#option-2:checked:checked ~ .option-2 span{
+  color: #fff;
+}
+/* 找工作css 結束 */
