@@ -253,7 +253,7 @@
       position: relative;
       color: #212529; }
       .site-mobile-menu .site-nav-wrap a:hover {
-        color: #89ba16;
+        color: #0085ff;
         text-decoration: none; }
     .site-mobile-menu .site-nav-wrap li {
       position: relative;
@@ -769,7 +769,8 @@ h1, h2, h3, h4 {
   display: block; }
 
 .custom-breadcrumbs a , .rounded-pill a , .cause-title .title , .cause-need .title{
-  color: #0085ff; }
+  color: #0085ff;
+}
   .custom-breadcrumbs a:hover , .more-cause h5{
     color: #fff; }
 
@@ -844,6 +845,18 @@ h1, h2, h3, h4 {
   padding-top: 6em;
   padding-bottom: 3em; }
 
+  .section-hero.inner-page, .section-hero.inner-page > .container > .job-row {
+    height: auto;
+    min-height: auto;
+    padding-top: 8em;
+    padding-bottom: 1em; }
+
+    .section-hero.inner-page, .section-hero.inner-page > .container > .job-row2 {
+      height: auto;
+      min-height: auto;
+      padding-top: 3em;
+      padding-bottom: 3em; }
+
 .section-hero.overlay, .section-hero.overlay-2 {
   position: relative; }
   .section-hero.overlay:before, .section-hero.overlay-2:before {
@@ -917,13 +930,14 @@ h1, h2, h3, h4 {
 
 .btn.btn-primary {
   background-color: #0085ff;
+  border: #0085FF solid 2px;
   color: #fff;
   font-weight: 800;
 
  }
   .btn.btn-primary:hover {
-    background: #90c317;
-    border-color: #90c317; }
+    background: #D00000;
+    border-color: #D00000; }
 
 .btn.btn-outline-white {
   background: transparent;
@@ -1943,9 +1957,6 @@ h1, h2, h3, h4 {
 /* 這是商城的css結束 */
 
 /* 找工作css 開始 */
-.job-search{
-  width: 90%;
-}
 .wrapper{
   display:inline-flex;
   height: 37px;
@@ -2009,5 +2020,12 @@ input[type="radio"]{
 #option-1:checked:checked ~ .option-1 span,
 #option-2:checked:checked ~ .option-2 span{
   color: #fff;
+}
+
+.section-hero .container .row .x-mark{
+  margin-top: -7px;
+  color: #fff;
+  font-size: 3.5rem;
+  font-weight: 100;
 }
 /* 找工作css 結束 */

@@ -121,16 +121,16 @@
 		<section class="section-hero overlay inner-page bg-image " style="background-image: url('images/hero_1.jpg');"
 			id="home-section">
 			<div class="container">
-				<div class="row mt-1">
-					<div class="col-12 col-lg-5  ml-lg-5">
-            <input type="text" class="form-control job-search">
+				<div class="row mt-1 job-row d-flex justify-content-center">
+					<div class="col-12 col-lg-5 col-md-6 ml-lg-5 d-flex">
+            <input type="text" class="form-control">
 					</div>
-           <div class="col-12 col-lg-1 mr-lg-5">
+           <div class="col-12 col-lg-1 col-md-1 mr-lg-5 d-flex">
             <a href="#">
-              <button class="btn btn-primary"><i class="fa-solid fa-magnifying-glass mx-4"></i></button>
+              <button class="btn btn-primary"><i class="fa-solid fa-magnifying-glass ml-4 mr-4"></i></button>
             </a>
           </div>
-          <div class="wrapper col-12 col-lg-3">
+          <div class="wrapper col-12 col-lg-3 d-flex justify-content-center ml-md-5 ">
             <input type="radio" name="select" id="option-1" checked>
             <input type="radio" name="select" id="option-2">
               <label for="option-1" class="option option-1">
@@ -142,6 +142,41 @@
                  <span>公司</span>
               </label>
            </div>
+				</div>
+				<div class="row mt-1 job-row2 d-flex justify-content-center">
+					<div class="col-lg-3 col-md-3">
+            <div class="form-group">
+              <select name="cause-category" class="form-control cause-category">
+                  <option value="0">行業別</option>
+                  <option value="1">服務業</option>
+                  <option value="2">商業</option>
+                  <option value="3">科技</option>
+                  <option value="4">製造</option>
+                  <option value="5">法律保險</option>
+                  <option value="6">藝文</option>
+                  <option value="7">餐飲</option>
+                  <option value="8">農林漁牧</option>
+              </select>
+            </div>
+          </div>
+					<div class="col-lg-3 col-md-3">
+            <div class="form-group">
+              <select name="cause-category" class="form-control cause-category">
+                  <option value="0">地區</option>
+              </select>
+            </div>
+          </div>
+					<div class="col-lg-1 col-md-1">
+            <div>
+							<a href="#"><i class="fa-solid x-mark">×</i></a>
+						</div>
+          </div>
+					<div class="col-lg-2 col-md-1 mt-lg-3">
+            <div>
+							<span class="fw-bold text-white"><a href="#" class="text-decoration-none text-white">修改會員資料<i
+								class="fa-solid fa-chevron-right"></i></a></span>
+						</div>
+          </div>
 				</div>
 			</div>
 		</section>
