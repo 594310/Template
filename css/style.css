@@ -949,10 +949,17 @@ h1, h2, h3, h4 {
     color: #000; }
 
 .btn.btn-outline-primary {
-  color: #89ba16; }
+  color: #0085ff; }
   .btn.btn-outline-primary:hover {
     color: #fff;
-    background: #89ba16; }
+    background: #0085ff; }
+
+.btn-dark{
+  color: #000;
+  border-radius: 5px;
+  background-color: #fff;
+  border: #000 solid 1px;
+}
 
 .custom-pagination a {
   width: 30px;
@@ -1532,7 +1539,7 @@ h1, h2, h3, h4 {
   .ul-check.primary li:before {
     color: #89ba16; }
 
-.block__18514 .block__47528 li {
+ .block__47528 li {
   margin-bottom: 10px; }
   .block__18514 .block__47528 li span , .cause-intro h5{
     font-weight: 700;
@@ -1965,6 +1972,9 @@ h1, h2, h3, h4 {
     overflow-y: overlay;
     border-radius: 12px 12px 12px 12px;
     margin-left: 0px;
+  }
+  .wrapper{
+    margin-top: 20px;
   }
 
 }
