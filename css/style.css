@@ -1734,6 +1734,20 @@ h1, h2, h3, h4 {
   font-size: 1.7rem;
 }
 
+
+.block__18514 .container .left .img{
+  width: 20%;
+}
+
+.block__18514 .container .left .img img{
+  margin: 2px;
+  width: 100px;
+}
+
+.block__18514 .container .left .job-context{
+  width: 80%;
+}
+
 .slide-button {
     background-color: #0085FF;
     color: white;
@@ -1917,7 +1931,7 @@ h1, h2, h3, h4 {
   .cause-need{
     margin-top: 100px;}
   .pay-allow{
-    width: 75%;
+    width: 80%;
   }
 }
 
