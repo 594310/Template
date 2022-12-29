@@ -380,7 +380,7 @@
         color: #000; }
         .sticky-wrapper.is-sticky .site-navbar .site-menu > li > a:after {
           height: 2px;
-          background: #89ba16;
+          background: #0085ff;
           content: "";
           position: absolute;
           bottom: 0;
@@ -918,7 +918,7 @@ h1, h2, h3, h4 {
       text-decoration: none; }
       .popular-keywords .keywords li a:hover {
         background: #fff;
-        color: #89ba16; }
+        color: #0085ff; }
 
 .btn:after, .btn:before {
   display: none; }
@@ -960,6 +960,11 @@ h1, h2, h3, h4 {
   background-color: #fff;
   border: #000 solid 1px;
 }
+.btn-dark:hover{
+  color: #fff;
+  background-color: #656565;
+  border: #656565 solid 1px;
+}
 
 .custom-pagination a {
   width: 30px;
@@ -970,7 +975,9 @@ h1, h2, h3, h4 {
   border: 1px solid #dee2e6;
   text-align: center;
   margin: 0 5px;
-  text-decoration: none; }
+  text-decoration: none;
+  color: #0085FF;
+}
   .custom-pagination a.prev, .custom-pagination a.next {
     width: auto;
     height: 30px;
@@ -979,9 +986,9 @@ h1, h2, h3, h4 {
     padding-right: 10px;
     border-radius: 4px; }
   .custom-pagination a.active, .custom-pagination a:hover {
-    background: #89ba16;
+    background: #0085ff;
     color: #fff;
-    border-color: #89ba16; }
+    border-color: #0085ff; }
 
 .border-width-2 {
   border-width: 2px !important; }
@@ -1382,7 +1389,7 @@ h1, h2, h3, h4 {
   width: 40px;
   height: 40px;
   position: relative;
-  background: #89ba16;
+  background: #0085ff;
   border-radius: 50%;
   text-decoration: none !important; }
   .footer-social a > span, .social a > span {
@@ -1396,7 +1403,7 @@ h1, h2, h3, h4 {
   .footer-social a:hover, .social a:hover {
     background: #fff; }
     .footer-social a:hover span, .social a:hover span {
-      color: #89ba16; }
+      color: #0085ff; }
 
 .social a:hover {
   background: #343a40; }
@@ -1741,11 +1748,6 @@ h1, h2, h3, h4 {
   font-size: 1.7rem;
 }
 
-
-.block__18514 .container .left .img{
-  width: 20%;
-}
-
 .block__18514 .container .left .img img{
   margin: 2px;
   width: 100px;
@@ -1761,7 +1763,7 @@ h1, h2, h3, h4 {
 }
 
 .slide-button:hover {
-    background-color: #89ba16;
+    background-color: #0085FF;
     color: white;
   }
   
@@ -1776,7 +1778,7 @@ h1, h2, h3, h4 {
   color: #0085FF;
     font-weight: 900;
   }
-  .slide-h3 , .item h3{
+  .slide-h3 , .item{
     font-weight: 900;
 }
 /* 這是slide廣告頁面--結束 */
@@ -2053,3 +2055,10 @@ input[type="radio"]{
   font-weight: 100;
 }
 /* 找工作css 結束 */
+
+.text-primary{
+  color: #0085FF !important;
+}
+.btn-JS{
+  width: 120px;
+}
