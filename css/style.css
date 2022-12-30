@@ -768,7 +768,7 @@ h1, h2, h3, h4 {
   cursor: inherit;
   display: block; }
 
-.custom-breadcrumbs a , .rounded-pill a , .cause-title .title , .cause-need .title{
+.custom-breadcrumbs a , .rounded-pill a , .cause-title .title , .cause-need .title ,.job-context h2{
   color: #0085ff;
 }
   .custom-breadcrumbs a:hover , .more-cause h5{
@@ -827,7 +827,7 @@ h1, h2, h3, h4 {
 .text-muted {
   color: #d5d5d5 !important; }
 
-.section-title ,.important-mess h2 ,.title{
+.section-title ,.important-mess h2 ,.title,.job-context h2{
   font-size: 2rem;
   font-weight: 700; }
 
@@ -1014,7 +1014,7 @@ h1, h2, h3, h4 {
 
 .block__19738 {
   text-align: center; }
-  .block__19738 [class^="icon-"], .block__19738 [class^="flaticon-"] {
+  .block__19738 [class^="icon-"], .block__19738 [class^="flaticon-"]{
     font-size: 2.5rem; }
   .block__19738 .number {
     font-size: 2.5rem;
@@ -1755,6 +1755,7 @@ h1, h2, h3, h4 {
 
 .block__18514 .container .left .job-context{
   width: 80%;
+  color: #000;
 }
 
 .slide-button ,.slide-button:hover {
@@ -1809,7 +1810,7 @@ h1, h2, h3, h4 {
   border: #0085FF solid 1px;
 }
   .btn-secondary:hover{
-    background-color: #D00000;
+    background-color: #0085ff;
   }
 
 .cause-span1{
@@ -1836,7 +1837,7 @@ h1, h2, h3, h4 {
   margin-top: 5px;
   font-weight: bold;
 }
-.cause-category option{
+.cause-category option,.block-19999 [class^="icon-"]{
   color: #0085FF;
 }
 .text-content{
@@ -1918,8 +1919,9 @@ h1, h2, h3, h4 {
   padding-left: 50px;
   padding-top: 70px;
 }
+
 .cause-intro::-webkit-scrollbar {
-  width: 0.5em;
+  width: 0.7em;
 }
 .cause-intro::-webkit-scrollbar-button{
   background: transparent;
@@ -2053,7 +2055,9 @@ h1, h2, h3, h4 {
 
 .text-primary{
   color: #0085FF !important;
+  font-weight: 800;
 }
 .btn-JS{
   width: 120px;
+  height: 45px;
 }
