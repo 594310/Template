@@ -1734,7 +1734,7 @@ h1, h2, h3, h4 {
   .box {
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  border: solid 2px #bebebe !important;
+  border: solid 2px #8a8a8a !important;
 }
 
 .context {
@@ -1778,7 +1778,7 @@ h1, h2, h3, h4 {
   color: #0085FF;
     font-weight: 900;
   }
-  .slide-h3 , .item{
+  .slide-h3 {
     font-weight: 900;
 }
 /* 這是slide廣告頁面--結束 */
@@ -2021,7 +2021,7 @@ h1, h2, h3, h4 {
   transform: scale(1.5);
   transition: all 0.3s ease;
 }
-input[type="radio"]{
+.wrapper input[type="radio"]{
   display: none;
 }
 
