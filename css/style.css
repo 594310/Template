@@ -1734,7 +1734,7 @@ h1, h2, h3, h4 {
   .box {
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  border: solid 2px #8a8a8a !important;
+  border: solid 2px #bebebe !important;
 }
 
 .context {
