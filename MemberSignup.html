@@ -22,51 +22,75 @@
     <link rel="stylesheet" href="css/style.css" />
     <style>
         .head {
+            padding-bottom: 20px;
             width: 100%;
-            height: 5%;
+            height: 2%;
             background-color: #0085FF;
-            border-top-right-radius: 35px;
-            border-top-left-radius: 35px;
+            border-top-right-radius: 20px;
+            border-top-left-radius: 20px;
         }
 
         .box {
-            border-bottom-left-radius: 35px;
-            border-bottom-right-radius: 35px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            border: solid 2px #bebebe !important;
         }
 
         .context {
-            border-top-right-radius: 35px;
-            border-top-left-radius: 35px;
-            border-bottom-left-radius: 35px;
-            border-bottom-right-radius: 35px;
-            min-height: 300px;
+            border: solid 2px #bebebe;
+            border-top-right-radius: 20px;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
         }
 
-        .button {
+        .context h3 {
+            font-size: 1.7rem;
+        }
+
+        .block__18514 .container .left .img img {
+            margin: 2px;
+            width: 100px;
+        }
+
+        .block__18514 .container .left .job-context {
+            width: 80%;
+        }
+
+        .slide-button,
+        .slide-button:hover {
             background-color: #0085FF;
             color: white;
         }
 
-        .button:hover {
-            background-color: #89ba16;
+        .slide-button a {
             color: white;
         }
 
-        a {
-            color: #0085FF;
-        }
-
-        a:hover {
-            color: #7f848c;
-        }
-
-
-        .btn a {
-            color: white;
-        }
-
-        .btn a:hover {
+        .slide-button a:hover {
             text-decoration: none;
+        }
+
+        .fw-bold a,
+        .important-mess p {
+            color: #0085FF;
+            font-weight: 900;
+        }
+
+        .slide-h3 {
+            font-weight: 900;
+        }
+
+
+
+        .button:hover {
+            background-color: #0085FF;
+            color: white;
+        }
+
+        .button:hover a {
+
+            color: white;
         }
     </style>
 </head>
@@ -90,7 +114,7 @@
         </div>
         <!-- .site-mobile-menu -->
 
-        <!-- NAVBAR -->
+        <!-- NAVBAR start-->
         <header class="site-navbar mt-3">
             <div class="container-fluid">
                 <div class="row align-items-center">
@@ -152,59 +176,88 @@
                 </div>
             </div>
         </header>
+        <!-- NAVBAR end-->
 
-        <!-- HOME -->
-
-        <section class="section-hero overlay inner-page bg-image" style="background-image: url('images/hero_1.jpg');"
+        <!-- HOME start-->
+        <section class="section-hero overlay inner-page bg-image" style="background-image: url('images/hero_1.jpg')"
             id="home-section">
             <div class="container">
                 <div class="row">
                     <div class="col-md-7">
-                        <h1 class="text-white font-weight-bold">Sign Up/Login</h1>
+                        <h1 class="text-white font-weight-bold">Sidebar Module</h1>
                         <div class="custom-breadcrumbs">
-                            <a href="#">Home</a> <span class="mx-2 slash">/</span>
-                            <span class="text-white"><strong>Log In</strong></span>
+                            <a href="#">Tips</a> <span class="mx-2 slash">/</span>
+                            <span class="text-white"><strong>最下面有留div，可自己改成想要的內容</strong></span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        <!-- home end -->
 
-        <section class="site-section">
-            <div class="container">
+        <section class="site-section block__18514 " id="next-section">
+            <div class="container h-100">
                 <div class="row">
-                    <div class="col-lg-4 ">
-                        <div class="head mt-4"></div>
-                        <div class="border p-4 box mb-5 h-auto">
-                            <ul class="list-unstyled block__47528 ">
-                                <li><span class="active h2">廣告</span></li>
-                                <figure class="w-100">
-                                    <img src="https://picsum.photos/100/100/?random=10" class="float-left mr-3">
-                                    <figcaption>
-                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, corrupti
-                                        distinctio dolore repellat corporis nulla consequuntur nostrum laboriosam
-                                        molestiae doloribus perspiciatis totam esse veritatis expedita, atque dicta,
-                                        ullam necessitatibus exercitationem.
-                                    </figcaption>
-                                </figure>
-                            </ul>
-                        </div>
-                        <div class="head mt-4"></div>
-                        <div class="border p-4 box mb-5 h-auto">
-                            <ul class="list-unstyled block__47528 ">
-                                <li><span class="active h2">廣告</span></li>
-                                <figure class="w-100">
-                                    <img src="https://picsum.photos/100/100/?random=10" class="float-left mr-3">
-                                    <figcaption>
-                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, corrupti
-                                        distinctio dolore repellat corporis nulla consequuntur nostrum laboriosam
-                                        molestiae doloribus perspiciatis totam esse veritatis expedita, atque dicta,
-                                        ullam necessitatibus exercitationem.
-                                    </figcaption>
-                                </figure>
-                            </ul>
-                        </div>
+                    <!-- Below is sidebar -->
+                    <div class="col-xs-12 col-md-10 col-lg-4">
+                        <nav class="navbar navbar-expand-lg navbar-light pl-lg-5 py-0">
+                            <!-- <a class="navbar-brand" href="#">Liya rescue</a> -->
+                            <button class="navbar-toggler mb-2" type="button" data-toggle="collapse"
+                                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav mr-auto flex-column">
+                                    <li class="nav-item px-1 mx-1 mb-5">
+                                        <div class="head "></div>
+                                        <div class="border p-4 box mb-6 h-auto">
+                                            <ul class="list-unstyled block__47528 ">
+                                                <li><span class="active h2">廣告</span></li>
+                                                <figure class="w-100">
+                                                    <img src="https://picsum.photos/100/100/?random=10"
+                                                        class="float-left mr-3">
+                                                    <figcaption>
+                                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                                        Maxime, corrupti
+                                                        distinctio dolore repellat corporis nulla consequuntur nostrum
+                                                        laboriosam
+                                                        molestiae doloribus perspiciatis totam esse veritatis expedita,
+                                                        atque dicta,
+                                                        ullam necessitatibus exercitationem.
+                                                    </figcaption>
+                                                </figure>
+                                            </ul>
+                                        </div>
+                                    </li>
+
+                                    <li class="nav-item px-1 mx-1 mb-5">
+                                        <div class="head mt-4"></div>
+                                        <div class="border p-4 box mb-6 h-auto">
+                                            <ul class="list-unstyled block__47528 ">
+                                                <li><span class="active h2">廣告</span></li>
+                                                <figure class="w-100">
+                                                    <img src="https://picsum.photos/100/100/?random=10"
+                                                        class="float-left mr-3">
+                                                    <figcaption>
+                                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                                        Maxime, corrupti
+                                                        distinctio dolore repellat corporis nulla consequuntur nostrum
+                                                        laboriosam
+                                                        molestiae doloribus perspiciatis totam esse veritatis expedita,
+                                                        atque dicta,
+                                                        ullam necessitatibus exercitationem.
+                                                    </figcaption>
+                                                </figure>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- </div> -->
+                        </nav>
                     </div>
+                    <!-- Above is sidebar -->
                     <div class="col-lg-8 mt-lg-0 mt-5  ">
                         <form action="#" class="mx-0 box context p-4">
                             <h2 class="font-weight-bolder py-3">加入會員</h2>
@@ -228,37 +281,37 @@
                                 <div class="col-md-12 mb-3 mb-md-0 mt-3">
                                     <label class="text-body h5" for="fname">產業類別</label>
                                 </div>
-                                <div class="col-md-7 col-12 ">
-                                    <select name="" id="" class="ml-2 w-100 custom-select">
-                                        <option value="" class="" selected>
+                                <div class="w-75 ml-3 h-100">
+                                    <select name="" id="" class="w-75 h5 rounded border text-body">
+                                        <option value="hurr" class="h5" selected disabled>
                                             請選擇產業類別
                                         </option>
-                                        <option value="" class="">
-                                            資訊軟體
-                                        </option>
-                                        <option value="" class="">
-                                            資訊軟體
-                                        </option>
+                                        <option value="0" class="h5  text-body"> 服務業</option>
+                                        <option value="1" class="h5  text-body"> 商業</option>
+                                        <option value="2" class="h5  text-body"> 科技業</option>
+                                        <option value="3" class="h5  text-body"> 製造業</option>
+                                        <option value="4" class="h5  text-body"> 法律保險</option>
+                                        <option value="5" class="h5  text-body"> 文藝產業</option>
+                                        <option value="6" class="h5  text-body"> 餐飲業</option>
+                                        <option value="7" class="h5  text-body"> 農林漁牧</option>
                                     </select>
-
+                                </div>
+                                <div class="col-md-12 mb-3 mb-md-0 mt-3">
+                                    <label class="text-body h5" for="fname">聯絡信箱</label>
+                                    <input type="password" id="fname" class="form-control col-md-7 col-12"
+                                        placeholder="例:example@member.com">
+                                </div>
+                                <div class="col-md-12 mb-3 mb-md-0 mt-3">
+                                    <label class="text-body h5" for="fname">聯絡電話</label>
+                                    <input type="password" id="fname" class="form-control col-md-7 col-12"
+                                        placeholder="例:0988123456">
                                 </div>
                             </div>
-                            <div class="col-md-12 mb-3 mb-md-0 mt-3">
-                                <label class="text-body h5" for="fname">密碼</label>
-                                <input type="password" id="fname" class="form-control col-md-7 col-12"
-                                    placeholder="密碼需由6-20個英文字母或數字組成">
-                            </div>
-                            <div class="col-md-12 mb-3 mb-md-0 mt-3">
-                                <label class="text-body h5" for="fname">密碼</label>
-                                <input type="password" id="fname" class="form-control col-md-7 col-12"
-                                    placeholder="密碼需由6-20個英文字母或數字組成">
-                            </div>
+                            <div class="row">
+                                <div class="col-md-12 d-flex justify-content-end">
+                                    <button class="btn px-4 slide-button m-2 w-25">清除</button>
 
-
-                            <div class="row form-group text-right">
-                                <div class="col-md-12 ">
-                                    <input type="submit" value="清除" class="btn px-4 button m-2">
-                                    <input type="submit" value="登入" class="btn px-4 button m-2">
+                                    <button class="btn px-4 slide-button m-2 w-25">登入</button>
                                 </div>
                             </div>
                         </form>
