@@ -1,0 +1,393 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <title>JobBoard &mdash; Website Template by Colorlib</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="stylesheet" href="css/custom-bs.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="fonts/line-icons/style.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/quill.snow.css">
+    <style>
+    
+    *{
+        font-family:"Microsoft JhengHei";
+    }
+    .card-header{
+        display: flex;
+        justify-content: space-between;
+    }
+    .form-control{
+        resize:none;
+        overflow-y:hidden;
+    }
+    .heart {
+    width: 100px;
+    height: 100px;
+    background: url("https://cssanimation.rocks/images/posts/steps/heart.png") no-repeat;
+    background-position: 0 0;
+    cursor: pointer;
+    transition: background-position 1s steps(28);
+    transition-duration: 0s;
+    }
+    .heart.is-active {
+	transition-duration: 1s;
+	background-position: -2800px 0;
+}
+
+    .a1{
+        background-color: #0085ff;
+        color: black;
+        font-size: 5px;
+    }
+    .b1{
+        background-color: white;
+        color: black;
+        width: 105px;
+        height: 40px;
+        border-radius: 10px;
+        /* border: 5px ; */
+        
+    }
+    .b2{
+        background-color: #0085ff;
+        color: white;
+        transform: translateX(-0.2%);
+        width: 105px;
+        height: 60px;
+        border-radius: 10px;
+        border: 5px ;
+    }
+    .highlight{
+        width:95%;
+        word-break:normal;
+        display:block;
+        white-space:pre-wrap;
+        overflow:hidden;
+    }
+    </style>
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body id="top">
+        <div id="overlayer"></div>
+        <div class="loader">
+            <div class="spinner-border text-primary" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+
+        <div class="site-wrap">
+            <div class="site-mobile-menu site-navbar-target">
+                <div class="site-mobile-menu-header">
+                    <div class="site-mobile-menu-close mt-3">
+                        <span class="icon-close2 js-menu-toggle"></span>
+                    </div>
+                </div>
+                <div class="site-mobile-menu-body"></div>
+            </div>
+            <!-- .site-mobile-menu -->
+
+            <!-- NAVBAR -->
+            <header class="site-navbar mt-3">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="site-logo col-6 col-lg-4">
+                            <a href="index.html" class="">
+                                <div class="mt-lg-5 mr-5">
+                                    <img
+                                        src="./Triangle_LOGO-removebg-preview.png"
+                                        alt="Triangle"
+                                        class="mt-sm-1 col-sm-9 mt-md-5 col-md-6 mt-lg-0 col-lg-6"
+                                    />
+                                </div>
+                            </a>
+                        </div>
+                        <nav class="mx-auto site-navigation mt-5 col-lg-6">
+                            <ul class="site-menu js-clone-nav d-none d-xl-block ml-0 pl-0">
+                                <li>
+                                    <a href="index.html" class="nav-link active fs-3 h4">首頁</a>
+                                </li>
+                                <li>
+                                    <a href="about.html" class="h4 active">找工作</a>
+                                </li>
+                                <li class="has-children">
+                                    <a href="job-listings.html" class="h4 active">資源</a>
+                                    <ul class="dropdown">
+                                        <li><a href="job-single.html">Job Single</a></li>
+                                        <li><a href="post-job.html">Post a Job</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-children">
+                                    <a href="cause-shopping.html" class="h4 active">商城</a>
+                                    <ul class="dropdown">
+                                        <li><a href="services.html">限時優惠</a></li>
+                                        <li><a href="service-single.html">課程管理</a></li>
+                                        <li><a href="cause_detail.html">測試頁面</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="blog.html" class="h4 active">討論區</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html" class="h4 active">聯絡我們</a>
+                                </li>
+                                <li class="d-lg-none">
+                                    <a href="post-job.html"><span class="mr-2">+</span> 信箱</a>
+                                </li>
+                                <li class="d-lg-none"><a href="login.html">登入/註冊</a></li>
+                            </ul>
+                        </nav>
+
+                        <div class="right-cta-menu text-right d-flex aligin-items-center col-6 mt-lg-4">
+                            <div class="ml-auto">
+                                <a
+                                    href="post-job.html"
+                                    class="btn btn-outline-white border-width-2 d-none d-lg-inline-block"
+                                    ><span class="mr-2 icon-add"></span>信箱</a
+                                >
+                                <a href="login.html" class="btn btn-primary border-width-2 d-none d-lg-inline-block"
+                                    ><span class="mr-2 icon-lock_outline"></span>登入/註冊</a
+                                >
+                            </div>
+                            <a href="#" class="site-menu-toggle js-menu-toggle d-inline-block d-xl-none mt-lg-2 ml-3"
+                                ><span class="icon-menu h3 m-0 p-0 mt-2"></span
+                            ></a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+    <!-- HOME -->
+    <section class="section-hero overlay inner-page bg-image" style="background-image: url('images/hero_1.jpg');" id="home-section">
+    <div class="container">
+        <div class="row">
+        <div class="col-md-12">
+            <div class="custom-breadcrumbs mb-0">
+            <span class="slash">找工作</span> Triangle</a> 
+            <span class="mx-2 slash">&bullet;</span>
+            <span class="text-white"><strong>April 15, 2019</strong></span>
+            </div>
+            <h1 class="text-white text-center">文章</h1>
+            
+        </div>
+        </div>
+    </div>
+    </section>
+    <body>
+    <!-- <div class="navbar navbar-expand-lg navbar-dark bg-info"> -->
+        <div class="a1">
+        <nav class="container">
+        <span  class=" navbar-brand mb-0 h1"></span>
+        </nav>
+    </div>
+    <div class="card my-3 mx-2">
+        <div class="card-header">緯謙科技股份有限公司
+            <div>
+                <script class="t1"type="text/javascript" text-align:right>
+        var myDate = new Date();
+        document.write(myDate.toLocaleString())
+        </script> 
+        <button>🖍</button>
+        </div>
+            </div>
+    
+        <div class="card-body">
+
+        <form action="#" method="post" enctype="multipart/form-data">
+    <div class="form-group">
+        <span class="highlight">
+        優點
+        卑微到只能共享緯創的福利
+        缺點
+        這家公司從2021年11月開始, 新進人員在試用期間一律要考過微軟AZ900的證照, 不管你是哪一個職務那怕是HR, 財會人員, 行銷人員, 甚至是助理, 通通都得考過AZ900證照考不過的下場是
+        1. 延長試用期3個月, 再考不過就請你走人
+        2. 先核准通過試用, 一個月內再考不過也是請你走人
+        原本想說慣老闆有什麼偉大的理想, 要求全員都要考過AZ900, 沒想到只是為了貪圖微軟的補助, 才要求全員都要考過AZ900; 公司好像是窮到快餓死一樣, 必須要靠微軟的少少補助才存活得下去
+        人生苦短, 在台北市好的工作很多, 非IT人員沒有必要為了養活這家公司, 而浪費生命去準備考一張和自己專業能力無關的證照, 未來從這家公司離職後, AZ900對於非IT人員完全沒有任何加分的作用
+        況且考過AZ900, 慣老闆也不會幫你加薪</span>
+        <div class="placement">
+            <div class="heart"></div>
+        </div>
+        <hr>
+        <div>
+        <span>
+            <p>
+                此公司的特色就是:年年虧損, 離職率高, 什麼都想做甚麼都不奇怪
+            </p>
+        </span>
+        <div>1樓</div>
+        <hr>
+        <span>
+            <p>
+                好奇 年年虧怎麼還沒倒XD
+            </p>
+        </span>
+        <div>2樓</div>
+        <hr>
+        <span>
+            <p>
+                沒倒是因為2021有個中華電信出資入股，還有新聞很風光，聽說3年要IPO
+                現在兩年過去了,還有一年可以拚,呵呵 
+            </p>
+        </span>
+        <div>3樓</div>
+        </div>
+        
+        <!-- <div class="card my-3 mx-2">
+            <div class="card-header" >
+            1樓
+            </div>
+            <div class="card-body">
+            <div class="card-title"><h6>此公司的特色就是:年年虧損, 離職率高, 什麼都想做甚麼都不奇怪</h6></div>
+            </div> -->
+            <!-- <hr> -->
+            <!-- <div class="card-header">
+                2樓
+            </div>
+            <div class="card-body">
+            <div class="card-title"><h6>好奇 年年虧怎麼還沒倒XD</h6></div>
+            </div> -->
+            <!-- <hr> -->
+            <!-- <div class="card-header">
+                3樓
+            </div>
+            <div class="card-body">
+            <div class="card-title"><h6>沒倒是因為2021有個中華電信出資入股，還有新聞很風光，聽說3年要IPO
+                現在兩年過去了,還有一年可以拚,呵呵 </h6></div>
+            </div> -->
+        <hr>
+        <div class="input-group">
+            <textarea type="text" name="userid" class="form-control" placeholder="留下你的想法..."></textarea>
+            <button type="submit" class="b2">發送</button>
+        </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </body>
+    <footer class="site-footer pt-5 pb-3">
+        <a href="#top" class="smoothscroll scroll-top">
+            <span class="icon-keyboard_arrow_up"></span>
+        </a>
+
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-6 col-md-3 mb-4 mb-md-0">
+                    <h3>Triangle服務</h3>
+                    <ul class="list-unstyled">
+                        <div class="row">
+                            <li class="col-6"><a href="#">履歷範本</a></li>
+                            <li class="col-6"><a href="#">製作履歷</a></li>
+                            <li class="col-6"><a href="#">工作世界</a></li>
+                            <li class="col-6"><a href="#">職涯導航</a></li>
+                            <li class="col-6"><a href="#">適性測驗</a></li>
+                            <li class="col-6"><a href="#">履歷診療</a></li>
+                            <li class="col-6"><a href="#">獵才顧問</a></li>
+                            <li class="col-6"><a href="#">公司評論</a></li>
+                            <li class="col-6"><a href="#">線上課程</a></li>
+                            <li class="col-6"><a href="#">專業講座</a></li>
+                            <li class="col-6"><a href="#">專業培訓</a></li>
+                            <li class="col-6"><a href="#">職涯論壇</a></li>
+                        </div>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-3 mb-4 mb-md-0">
+                    <h3>關於我們</h3>
+                    <ul class="list-unstyled">
+                        <div class="row">
+                            <li class="col-6"><a href="#">企業網站</a></li>
+                            <li class="col-6"><a href="#">新聞中心</a></li>
+                            <li class="col-6"><a href="#">粉絲專頁</a></li>
+                            <li class="col-6"><a href="#">加入Triangle</a></li>
+                            <li class="col-6"><a href="#">合作提案</a></li>
+                            <li class="col-6"><a href="#">會員規約</a></li>
+                            <li class="col-6"><a href="#">求職規約</a></li>
+                            <li class="col-6"><a href="#">隱私權聲明</a></li>
+                        </div>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-3 mb-4 mb-md-0">
+                    <h3>營業資訊</h3>
+                    <ul class="list-unstyled">
+                        <li>營業時間:</li>
+                        <li>周一至周五 9:00~16:30</li>
+                        <li>公司地址:</li>
+                        <li>Alan家</li>
+                        <li>電話:0000000000</li>
+                        <li>傳真:0000000000</li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-3 mb-4 mb-md-0">
+                    <h3>廣告行銷</h3>
+                    <div class="footer-social">
+                        <p>整合廣告服務</p>
+                        <p>服務專線:00000000000</p>
+                        <!-- 以下為超連結icon，可用 -->
+                        <!-- <a href="#"><span class="icon-facebook"></span></a>
+                        <a href="#"><span class="icon-twitter"></span></a>
+                        <a href="#"><span class="icon-instagram"></span></a>
+                        <a href="#"><span class="icon-linkedin"></span></a> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="row text-center">
+                <div class="col-12">
+                    <p class="copyright">
+                        <small>
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            Copyright &copy;
+                            <script>
+                                document.write(new Date().getFullYear());
+                            </script>
+                            All rights reserved | This template is made with
+                            <i class="icon-heart text-danger" aria-hidden="true"></i> by
+                            <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            <p>免責聲明 : 以上內容純屬抄襲，如有雷同，請不要告我</p>
+                        </small>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </html>
+    
+    <!-- SCRIPTS -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/stickyfill.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/quill.min.js"></script>
+    
+    
+    <script src="js/bootstrap-select.min.js"></script>
+    
+    <script src="js/custom.js"></script>
+
+<script>
+    $(function() {
+$(".heart").on("click", function() {
+    $(this).toggleClass("is-active");
+});
+});
+</script>
+
+
+
+</body>
+</html>
