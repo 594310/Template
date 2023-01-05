@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>JobBoard &mdash; Website Template by Colorlib</title>
+  <title>討論區</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <meta name="description" content="" />
@@ -18,20 +18,114 @@
   <link rel="stylesheet" href="css/owl.carousel.min.css" />
   <link rel="stylesheet" href="css/animate.min.css" />
   <!-- font awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
 
   <!-- MAIN CSS -->
   <link rel="stylesheet" href="css/style.css" />
   <style>
-    .head {
-      padding-bottom: 20px;
-      width: 100%;
-      height: 2%;
-      background-color: #0085FF;
-      border-top-right-radius: 20px;
-      border-top-left-radius: 20px;
+  .head {
+    padding-bottom: 20px;
+    width: 100%;
+    height: 2%;
+    background-color: #0085FF;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+  }
+
+    .box {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: solid 2px #bebebe !important;
+  }
+
+  .context {
+    border: solid 2px #bebebe;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  .context h3{
+  font-size: 1.7rem;
+  }
+
+.block__18514 .container .left .img img{
+  margin: 2px;
+  width: 100px;
+  }
+
+.block__18514 .container .left .job-context{
+  width: 80%;
+  }
+
+.slide-button ,.slide-button:hover {
+    background-color: #0085FF;
+    color: white;
+  }
+  
+  .slide-button a {
+    color: white;
+  }
+
+.slide-button a:hover {
+    text-decoration: none;
+  }
+.fw-bold a ,.important-mess p{
+  color: #0085FF;
+    font-weight: 900;
+  }
+
+  .slide-h3 {
+    font-weight: 900;
+}
+.b1{
+        background-color: #0085ff;
+        color: azure;
+        /* transform: translateX(390%); */
+        /* width: 105px; */
+        /* height: 40px; */
+        border-radius: 10px;
+        padding: 13px;
+        border: 5px ;
     }
+    .w1{
+        display: flex;
+        justify-content: space-between;
+    }
+    .b2{
+        background-color: #0085ff;
+        color: white;
+        width: 50px;
+        height: 40px;
+        border-radius: 10px;
+        border: 5px;
+    }
+    .a1{
+        color: black;
+    }
+    .un{
+        text-align: right;
+    }
+    .c1{
+        background-color: rgb(188, 180, 180);
+        color: black;
+    }
+    .fly-list-li{
+        display: flex;
+        justify-content: space-between;
+    }
+    </style>
+    <script type="text/javascript">
+        function changeColor(el) {
+                el.style.color = "#0085ff";
+            }
+            function resetColor(el) {
+                el.style.color = "";
+            }
+    </script>
   </style>
+      <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body id="top">
@@ -42,7 +136,7 @@
     </div>
   </div>
 
-  <div class="site-wrap">
+<div class="site-wrap">
     <div class="site-mobile-menu site-navbar-target">
       <div class="site-mobile-menu-header">
         <div class="site-mobile-menu-close mt-3">
@@ -115,140 +209,27 @@
     </header>
     <!-- NAV end -->
 
-    <!-- HOME start-->
-    <section class="section-hero overlay inner-page bg-image " style="background-image: url('images/hero_1.jpg');"
-      id="home-section">
-      <div class="container">
-        <div class="row mt-1 job-row d-flex justify-content-center">
-          <div class="col-12 col-lg-5 col-md-6 col-sm-6 text-center">
-            <input type="text" class="form-control">
+  
+      <!-- HOME -->
+          <section class="section-hero overlay inner-page bg-image" style="background-image: url('images/hero_1.jpg');" id="home-section">
+          <div class="container">
+              <div class="row">
+              <div class="col-md-7">
+                  <h1 class="text-white font-weight-bold">論壇討論區</h1>
+                  <div class="custom-breadcrumbs">
+                  </div>
+              </div>
+              </div>
           </div>
-          <div class="col-12 col-lg-1 col-md-1 col-sm-4 mr-lg-5 d-flex">
-            <a href="#">
-              <button class="btn btn-primary"><i class="fa-solid fa-magnifying-glass ml-4 mr-4"></i></button>
-            </a>
-          </div>
-          <div class="wrapper col-12 col-lg-3 d-flex col-md-6 justify-content-center text-center">
-            <input type="radio" name="select" id="option-1" checked>
-            <input type="radio" name="select" id="option-2">
-            <label for="option-1" class="option option-1">
-              <div class="dot"></div>
-              <span>職缺</span>
-            </label>
-            <label for="option-2" class="option option-2">
-              <div class="dot"></div>
-              <span>公司</span>
-            </label>
-          </div>
-        </div>
-        <div class="row mt-1 job-row2 d-flex justify-content-center">
-          <div class="col-lg-3 col-md-6 ">
-            <div class="form-group">
-              <select name="cause-category" class="form-control cause-category">
-                <option value="0">行業別</option>
-                <option value="1">服務業</option>
-                <option value="2">商業</option>
-                <option value="3">科技</option>
-                <option value="4">製造</option>
-                <option value="5">法律保險</option>
-                <option value="6">藝文</option>
-                <option value="7">餐飲</option>
-                <option value="8">農林漁牧</option>
-              </select>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="form-group">
-              <select name="cause-category" class="form-control cause-category">
-                <option value="0">地區</option>
-              </select>
-            </div>
-          </div>
-          <div class="col-lg-1 col-md-1 col-sm-2">
-            <div>
-              <a href="#"><i class="fa-solid x-mark">×</i></a>
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-3 mt-lg-3 mt-md-2 text-sm-right">
-            <div>
-              <span class="fw-bold text-white"><a href="#" class="text-decoration-none text-white">修改會員資料<i
-                    class="fa-solid fa-chevron-right"></i></a></span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+          </section>
     <!-- home end -->
 
-    <!-- content start -->
     <section class="site-section block__18514 pt-4" id="next-section">
       <div class="container h-100">
         <div class="row">
-          <!-- leftslide start -->
-          <div class="col-lg-8 mt-lg-5 mt-3 order-lg-1 order-2">
-            <!-- 一個card start -->
-            <div class="card context row p-3 mb-4 mx-1">
-              <div class="d-lg-flex sm-row justify-content-between">
-                <div class="left col-lg-9 col-12 d-sm-flex xs-row">
-                  <div class="img col-xs-12">
-                    <img src="/images/job_logo_4.jpg" alt="">
-                  </div>
-                  <div class="job-context">
-                    <ul class="list-unstyled block__47528 mb-0 ">
-                      <li class="ml-3 d-flex row mt-2">
-                        Google Taiwan
-                      </li>
-                      <li class="ml-3 font-weight-bold active">Lorem ipsum dolor sit amet consectetur adipisicingelit
-                      </li>
-                    </ul>
-                    <p class="ml-3 card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, corrupti
-                      distinctio dolore repellat corporis nulla consequuntur nostrum laboriosam</p>
-                  </div>
-                </div>
-                <div class="right col-lg-3 col-12 mt-3 ml-2 ml-lg-o ml-sm-4 xs-row">
-                  <div class="py-1 d-lg-flex d-inline px-lg-0 px-sm-2">
-                    <i class="fa-solid fa-user"></i><span class="fs-6 ml-2">全職</span>
-                  </div>
-                  <div class="py-1 d-lg-flex d-inline px-lg-0 px-sm-2">
-                    <i class="fa-solid fa-location-dot"></i><span class="fs-6 ml-2">新北市</span>
-                  </div>
-                  <div class="py-1 d-lg-flex d-inline px-lg-0 px-sm-2">
-                    <i class="fa-solid fa-sack-dollar"></i><span class="fs-6 ml-2">35000</span>
-                  </div>
-                  <div class="py-1 d-lg-flex d-inline px-lg-0 px-sm-2">
-                    <i class="fa-solid fa-briefcase"></i><span class="fs-6 ml-2">不限年資</span>
-                  </div>
-                  <div class="py-1 d-lg-flex d-inline px-lg-0 px-sm-2">
-                    <i class="fa-solid fa-share-nodes"></i><span class="fs-6 ml-2">需輪班</span>
-                  </div>
-                </div>
-              </div>
-              <div class="d-lg-flex sm-row mt-3">
-                <div class="d-lg-flex ml-sm-2 mt-md-1 col-lg-6 col-12">
-                  <div class="pl-5">
-                    <i class="fa-regular fa-clock"></i><span class="fs-6 ml-2">幾小時前更新</span>
-                  </div>
-                  <div class="pl-5">
-                    <i class="fa-regular fa-eye"></i><span class="fs-6 ml-2">1000+</span>
-                  </div>           
-                </div>
-                <div class="col-lg-6 col-12 text-right">
-                  <a href="#">
-                    <button class="btn btn-dark px-4 mx-1"><i class="fa-regular fa-bookmark"></i><span class="ml-2">儲存</span></button>
-                  </a>
-                  <a href="#">
-                    <button class="btn btn-primary mx-1"><i class="fa-solid fa-arrow-up-right-from-square"></i><span class="ml-2">立即應徵</span></button>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <!-- 一個card end -->
-          </div>
-          <!-- leftslide end -->
-
-          <!-- Below is sidebar -->
-          <div class="col-xs-12 col-md-10 col-lg-4 mt-lg-5 order-lg-2 order-1">
-            <nav class="navbar navbar-expand-lg navbar-light px-1 py-0">
+    <!-- Below is sidebar -->
+          <div class="col-xs-12 col-md-10 col-lg-4 mt-lg-5">
+            <nav class="navbar navbar-expand-lg navbar-light pl-lg-5 py-0">
               <!-- <a class="navbar-brand" href="#">Liya rescue</a> -->
               <button class="navbar-toggler mb-2" type="button" data-toggle="collapse"
                 data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -332,15 +313,261 @@
               <!-- </div> -->
             </nav>
           </div>
-          <!-- Above is sidebar -->
+    <!-- Above is sidebar -->
+
+    <!-- Content start -->
+          <div class="col-xs-12 col-md-12 col-lg-8 mt-lg-5">
+            <div id="contentpart" class="col">
+              <div class="content1 border-dark">
+               <li class="w1">
+            <form action="" class="fly-search">
+            <input class="layui-input" autocomplete="off" placeholder="搜索内容" type="text" name="q">
+            </form>
+            <br>
+        <a href="bolgpost.html" class="b1" >發文分享📝</a>
+        </li>
+        <hr>
+        <ul class="fly-list">
+        <li class="fly-list-li">
+            <div>
+            <h4 class="fly-tip">
+                <a class="a1" href="blog文章.html" onmouseover="changeColor(this)" onmouseout="resetColor(this)">緯謙科技股份有限公司</a>
+            </h4>
+            </div>
+            <div>
+                <p>
+                <span><script>var myDate = new Date();
+                    document.write(myDate.toLocaleString())</script></span>
+                <span class="fly-list-hint">
+                    <i class="un" title="回答">💬3</i>
+                </span>
+                </p>
+            </div>
+        </li>
+        <hr>
+        <li class="fly-list-li">
+            <div>
+            <h4 class="fly-tip">
+                <a class="a1" href="jie/detail.html" onmouseover="changeColor(this)" onmouseout="resetColor(this)">奧斯曼數位行銷有限公司</a>
+            </h4>
+            </div>
+            <div>
+            <p>
+                <span>30分钟前</span>
+                <span class="fly-list-hint">
+                    <i class="un" title="回答">💬3</i>
+                </span>
+            </p>
+            </div>
+        </li>
+        <hr>
+        <li class="fly-list-li">
+            <div>
+            <h4 class="fly-tip">
+                <a class="a1" href="detail.html" onmouseover="changeColor(this)" onmouseout="resetColor(this)">緯謙科技股份有限公司</a>
+            </h4>
+            </div>
+            <div>
+            <p>
+                <span>30分钟前</span>
+                <span class="fly-list-hint">
+                    <i class="un" title="回答">💬3</i>
+                </span>
+            </p>
+            </div>
+        </li>
+        <hr>
+        <li class="fly-list-li">
+            <div>
+            <h4 class="fly-tip">
+                <a class="a1" href="jie/detail.html" onmouseover="changeColor(this)" onmouseout="resetColor(this)">奧斯曼數位行銷有限公司</a>
+            </h4>
+            </div>
+            <div>
+            <p>
+                <span>30分钟前</span>
+                <span class="fly-list-hint">
+                    <i class="un" title="回答">💬3</i>
+                </span>
+            </p>
+            </div>
+        </li>
+        <hr>
+        <li class="fly-list-li">
+            <div>
+            <h4 class="fly-tip">
+                <a class="a1" href="detail.html" onmouseover="changeColor(this)" onmouseout="resetColor(this)">緯謙科技股份有限公司</a>
+            </h4>
+            </div>
+            <div>
+            <p>
+                <span>30分钟前</span>
+                <span class="fly-list-hint">
+                    <i class="un" title="回答">💬3</i>
+                </span>
+            </p>
+            </div>
+        </li>
+        <hr>
+        <li class="fly-list-li">
+            <div>
+            <h4 class="fly-tip">
+                <a class="a1" href="jie/detail.html" onmouseover="changeColor(this)" onmouseout="resetColor(this)">奧斯曼數位行銷有限公司</a>
+            </h4>
+            </div>
+            <div>
+            <p>
+                <span>30分钟前</span>
+                <span class="fly-list-hint">
+                    <i class="un" title="回答">💬3</i>
+                </span>
+            </p>
+            </div>
+        </li>
+        <hr>
+        <li class="fly-list-li">
+            <div>
+            <h4 class="fly-tip">
+                <a class="a1" href="detail.html" onmouseover="changeColor(this)" onmouseout="resetColor(this)">緯謙科技股份有限公司</a>
+            </h4>
+            </div>
+            <div>
+            <p>
+                <span>30分钟前</span>
+                <span class="fly-list-hint">
+                    <i class="un" title="回答">💬3</i>
+                </span>
+            </p>
+            </div>
+        </li>
+        <hr>
+        <li class="fly-list-li">
+            <div>
+            <h4 class="fly-tip">
+                <a class="a1" href="jie/detail.html" onmouseover="changeColor(this)" onmouseout="resetColor(this)">奧斯曼數位行銷有限公司</a>
+            </h4>
+            </div>
+            <div>
+            <p>
+                <span>30分钟前</span>
+                <span class="fly-list-hint">
+                    <i class="un" title="回答">💬3</i>
+                </span>
+            </p>
+            </div>
+        </li>
+        <hr>
+        <li class="fly-list-li">
+            <div>
+            <h4 class="fly-tip">
+                <a class="a1" href="detail.html" onmouseover="changeColor(this)" onmouseout="resetColor(this)">緯謙科技股份有限公司</a>
+            </h4>
+            </div>
+            <div>
+            <p>
+                <span>30分钟前</span>
+                <span class="fly-list-hint">
+                    <i class="un" title="回答">💬3</i>
+                </span>
+            </p>
+            </div>
+        </li>
+        <hr>
+        <li class="fly-list-li">
+            <div>
+            <h4 class="fly-tip">
+                <a class="a1" href="jie/detail.html" onmouseover="changeColor(this)" onmouseout="resetColor(this)">奧斯曼數位行銷有限公司</a>
+            </h4>
+            </div>
+            <div>
+            <p>
+                <span>30分钟前</span>
+                <span class="fly-list-hint">
+                    <i class="un" title="回答">💬3</i>
+                </span>
+            </p>
+            </div>
+        </li>
+        <hr>
+        <li class="fly-list-li">
+            <div>
+            <h4 class="fly-tip">
+                <a class="a1" href="detail.html" onmouseover="changeColor(this)" onmouseout="resetColor(this)">緯謙科技股份有限公司</a>
+            </h4>
+            </div>
+            <div>
+            <p>
+                <span>30分钟前</span>
+                <span class="fly-list-hint">
+                    <i class="un" title="回答">💬3</i>
+                </span>
+            </p>
+            </div>
+        </li>
+        <hr>
+        <li class="fly-list-li">
+            <div>
+            <h4 class="fly-tip">
+                <a class="a1" href="jie/detail.html" onmouseover="changeColor(this)" onmouseout="resetColor(this)">奧斯曼數位行銷有限公司</a>
+            </h4>
+            </div>
+            <div>
+            <p>
+                <span>30分钟前</span>
+                <span class="fly-list-hint">
+                    <i class="un" title="回答">💬3</i>
+                </span>
+            </p>
+            </div>
+        </li>
+        <hr>
+        <li class="fly-list-li">
+            <div>
+            <h4 class="fly-tip">
+                <a class="a1" href="detail.html" onmouseover="changeColor(this)" onmouseout="resetColor(this)">緯謙科技股份有限公司</a>
+            </h4>
+            </div>
+            <div>
+            <p>
+                <span>30分钟前</span>
+                <span class="fly-list-hint">
+                    <i class="un" title="回答">💬3</i>
+                </span>
+            </p>
+            </div>
+        </li>
+        <hr>
+        <li class="fly-list-li">
+            <div>
+            <h4 class="fly-tip">
+                <a class="a1" href="jie/detail.html" onmouseover="changeColor(this)" onmouseout="resetColor(this)">奧斯曼數位行銷有限公司</a>
+            </h4>
+            </div>
+            <div>
+            <p>
+                <span>30分钟前</span>
+                <span class="fly-list-hint">
+                    <i class="un" title="回答">💬3</i>
+                </span>
+            </p>
+            </div>
+        </li>
+        <hr>
+    </ul>
+              </div>
+              <div class="content1 border-dark"></div>
+              <div class="content1 border-dark"></div>
+              <div class="content2"></div>
+              <div class="content3"></div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
     <!-- content end -->
 
-
-    <!-- footer start -->
-    <footer class="site-footer pb-2 pt-5 mt-2">
+  <!-- footer start -->
+    <footer class="site-footer pt-5 pb-3">
       <a href="#top" class="smoothscroll scroll-top">
         <span class="icon-keyboard_arrow_up"></span>
       </a>
@@ -413,7 +640,7 @@
                 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                 Copyright &copy;
                 <script>
-                  document.write(new Date().getFullYear());
+                                   w Date().getFullYear());
                 </script>
                 All rights reserved | This template is made with
                 <i class="icon-heart text-danger" aria-hidden="true"></i> by
@@ -426,8 +653,9 @@
         </div>
       </div>
     </footer>
-  </div>
   <!-- footer end -->
+  
+</div>
 
   <!-- SCRIPTS -->
   <script src="js/jquery.min.js"></script>
