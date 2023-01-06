@@ -88,7 +88,7 @@
           top: 100%;
           position: absolute;
           text-align: left;
-          border-top: 2px solid #89ba16;
+          border-top: 2px solid #0085FF;
           -webkit-box-shadow: 0 2px 20px -2px rgba(0, 0, 0, 0.2);
           box-shadow: 0 2px 20px -2px rgba(0, 0, 0, 0.2);
           padding: 0px 0;
@@ -575,7 +575,7 @@ h1, h2, h3, h4 {
       left: 0;
       right: 0;
       bottom: 0;
-      background: rgba(137, 186, 22, 0.9);
+      background: #0085FF;
       z-index: 1; }
     .bg-image.overlay-primary > .container {
       position: relative;
@@ -589,7 +589,7 @@ h1, h2, h3, h4 {
       left: 0;
       right: 0;
       bottom: 0;
-      background: rgba(137, 186, 22, 0.9);
+      background: #0085ff;
       z-index: 1; }
     .bg-image.overlay-blue > .container {
       position: relative;
@@ -732,7 +732,7 @@ h1, h2, h3, h4 {
       -o-transition: .3s all ease;
       transition: .3s all ease; }
       .job-listings .job-listing a:hover {
-        border-left: 7px solid #0085ff; }
+        border-left: 7px solid #0085FF; }
     .job-listings .job-listing .job-listing-logo {
       -webkit-box-flex: 0;
       -ms-flex: 0 0 150px;
@@ -928,16 +928,17 @@ h1, h2, h3, h4 {
   -webkit-box-shadow: none !important;
   box-shadow: none !important; }
 
-.btn-primary {
+.btn.btn-primary {
   background-color: #0085ff;
   border: #0085FF solid 2px;
-  color: #fff;
+  color: #fff !important;
   font-weight: 800;
 
  }
-.btn-primary:hover {
-background: #D00000;
-border-color: #D00000; }
+  .btn.btn-primary:hover {
+    color: #fff !important;
+    background: #D00000;
+    border-color: #D00000; }
 
 .btn.btn-outline-white {
   background: transparent;
@@ -955,13 +956,14 @@ border-color: #D00000; }
     background: #0085ff; }
 
 .btn-dark{
+  font-weight: 700;
   color: #000;
   border-radius: 5px;
   background-color: #fff;
   border: #000 solid 1px;
 }
 .btn-dark:hover{
-  color: #fff;
+  color: #fff !important;
   background-color: #656565;
   border: #656565 solid 1px;
 }
@@ -985,9 +987,9 @@ border-color: #D00000; }
     padding-left: 10px;
     padding-right: 10px;
     border-radius: 4px; }
-  .custom-pagination a.active,.custom-pagination .prev:hover , .custom-pagination div a:hover,.custom-pagination .next:hover{
+  .custom-pagination a.active, .custom-pagination a:hover {
     background: #0085ff;
-    color: #fff !important;
+    color: #fff;
     border-color: #0085ff; }
 
 .border-width-2 {
@@ -1016,7 +1018,7 @@ border-color: #D00000; }
   text-align: center; }
   .block__19738 [class^="icon-"], .block__19738 [class^="flaticon-"]{
     font-size: 2.5rem; }
-  .block__19738 .number {
+  .block__19738 .number{
     font-size: 2.5rem;
     font-weight: 900;
     color: #fff; }
@@ -1235,9 +1237,9 @@ border-color: #D00000; }
       -webkit-transition: .3s all ease;
       -o-transition: .3s all ease;
       transition: .3s all ease;
-      background: #89ba16;
+      background: #0085FF;
       color: #fff;
-      border: 1px solid #89ba16; }
+      border: 1px solid #0085FF; }
     .block__76208 .accordion-item .heading > a[aria-expanded="false"]:before {
       content: "\e313";
       color: #ccc;
@@ -1319,8 +1321,8 @@ border-color: #D00000; }
     -o-transition: .3s all ease-in-out;
     transition: .3s all ease-in-out; }
 
-.site-menu-toggle:hover {
-  text-decoration: none; }
+.site-menu-toggle:hover,.block__47528 li:hover,.block__47528 a:hover{
+  text-decoration: none !important; }
 
 .site-footer {
   padding: 7rem 0;
@@ -1542,13 +1544,13 @@ border-color: #D00000; }
   .ul-check.white li:before {
     color: #fff; }
   .ul-check.success li:before {
-    color: #89ba16; }
+    color: #0085ff; }
   .ul-check.primary li:before {
-    color: #89ba16; }
+    color: #0085FF; }
 
  .block__47528 li {
   margin-bottom: 10px; }
-  .block__18514 .block__47528 li span , .cause-intro h5{
+  .block__18514 .block__47528 li span , .cause-intro h5 , .form-group h5{
     font-weight: 700;
     color: #000; }
   .block__18514 .block__47528 li a {
@@ -1744,8 +1746,17 @@ border-color: #D00000; }
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
-.context h3{
-  font-size: 1.7rem;
+.context h3 ,.site-section h3{
+  font-size: 1.7rem !important;
+}
+
+.context a{
+  color: #7f848c;
+}
+
+.section-hero a:hover, .context a:hover{
+  text-decoration: none;
+  color: #0085FF;
 }
 
 .block__18514 .container .left .img img{
@@ -1758,23 +1769,20 @@ border-color: #D00000; }
   color: #000;
 }
 
-.slide-button ,.slide-button:hover {
-    background-color: #0085FF;
-    color: white;
+.slide-button ,.slide-button:hover ,.rounded-pill:hover {
+    background-color: #0085FF !important;
+    color: white !important;
+    text-decoration: none;
 }
   
-  .slide-button a {
-    color: white;
-}
-
-.slide-button a:hover {
-    text-decoration: none;
+  .slide-button a ,.rounded-pill:hover a {
+    color: white !important;
 }
 .fw-bold a ,.important-mess p{
   color: #0085FF;
     font-weight: 900;
   }
-  .slide-h3 {
+  .slide-h3 , .more-cause h2.text-white {
     font-weight: 900;
 }
 /* 這是slide廣告頁面--結束 */
@@ -1782,14 +1790,6 @@ border-color: #D00000; }
 /* 課程管理 開始 */
 .rounded-pill{
   border: #0085FF 0.5px solid;
-}
-
-.rounded-pill a:hover{
-  color: #fff;
-  text-decoration:none;
-}
-.rounded-pill:hover{
-  background-color: #0085FF;
 }
 
 /* 這是商城的css開始 */
@@ -1908,16 +1908,22 @@ border-color: #D00000; }
 }
 
 
-.more-cause div{
+.more-cause{
   height: 150px;
-  width: 95%;
   margin: auto;
   border-radius: 15px;
 }
+
 .more-cause h5{
   position: absolute;
   padding-left: 50px;
   padding-top: 70px;
+}
+
+.more-cause h2{
+  position: absolute;
+  padding-left: 50px;
+  padding-top: 8px;
 }
 
 .cause-intro::-webkit-scrollbar {
@@ -2057,12 +2063,11 @@ border-color: #D00000; }
   color: #0085FF !important;
   font-weight: 800;
 }
-.btn-JS {
+.btn-JS{
   width: 120px;
   height: 45px;
 }
 
-.site-section a:hover{
-  text-decoration: none;
+.text-secondary{
   color: #0085FF !important;
 }
