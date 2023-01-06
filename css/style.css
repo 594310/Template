@@ -2072,3 +2072,12 @@ h1, h2, h3, h4 {
   color: #0085FF !important;
   text-decoration: none;
 }
+
+.btn-test{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: #0085ff solid 2px;
+  background-color: transparent;
+  color: #0085FF;
+}
