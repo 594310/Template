@@ -17,12 +17,36 @@
   <link rel="stylesheet" href="fonts/line-icons/style.css" />
   <link rel="stylesheet" href="css/owl.carousel.min.css" />
   <link rel="stylesheet" href="css/animate.min.css" />
-  <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 
   <!-- MAIN CSS -->
   <link rel="stylesheet" href="css/style.css" />
   <style>
   </style>
+  <script src="https://www.paypal.com/sdk/js?client-id=Ab4yDn4BMS6wkUCy-BZqqV0fw_NM9UPmGc1IeZsn5N51HjT98IzI5Ha4bXbzX_n4qVPcbsVwJyENYyk3"></script>
+  <script>
+    // Render the PayPal button into #paypal-button-container
+    paypal.Buttons({
+        // Set up the transaction
+        createOrder: function(data, actions) {
+            return actions.order.create({
+                purchase_units: [{
+                    amount: {
+                        value: '88.44'
+                    }
+                }]
+            });
+        },
+
+        // Finalize the transaction
+        onApprove: function(data, actions) {
+            return actions.order.capture().then(function(orderData) {
+                console.log('Capture result', orderData, 
+                            JSON.stringify(orderData, null, 2));
+            });
+        }
+    }).render('#payment-button');
+</script>
 </head>
 
 <body id="top">
@@ -44,8 +68,8 @@
     </div>
     <!-- .site-mobile-menu -->
 
-     <!-- NAVBAR start -->
-     <header class="site-navbar mt-3">
+    <!-- NAVBAR start -->
+    <header class="site-navbar mt-3">
       <div class="container-fluid">
         <div class="row align-items-center">
           <div class="site-logo col-6 col-lg-4">
@@ -124,91 +148,41 @@
       <div class="container h-100">
         <div class="row">
           <!-- leftslide start -->
-          <div class="col-lg-6 pay-content mt-5 pt-5 pt-lg-0 mt-lg-0 pb-2">
+          <div class="col-lg-7 pay-content mt-5 pt-5 pt-lg-0 mt-lg-0 pb-2">
             <div class="context  w-100 p-3 mb-4">
               <div class="item row pt-4">
-                <h3 class="display-5 fw-bolder mb-0 col-6 ml-3">應徵紀錄</h3>
+                <h3 class="display-5 fw-bolder mb-0 col-12 ml-3">確認訂單</h3>
+                <hr>
+                <h5 class="display-5 font-weight-bold mb-0 col-12 ml-3 pt-4">Vue.js從入門到入土</h5>
               </div>
-              <ul class="list-unstyled block__47528 mb-0 ">
-                <li class="ml-3 font-weight-bold active">Lorem ipsum dolor sit amet consectetur
-                  adipisicingelit</li>
-                <li class="ml-3 d-flex row mt-2 mb-2">
-                  Google Taiwan
-                </li>
-                <hr>
-                <li class="ml-3 font-weight-bold active">Lorem ipsum dolor sit amet consectetur
-                  adipisicingelit</li>
-                <li class="ml-3 d-flex row mt-2 mb-2">
-                  Google Taiwan
-                </li>
-                <hr>
-                <li class="ml-3 font-weight-bold active">Lorem ipsum dolor sit amet consectetur
-                  adipisicingelit</li>
-                <li class="ml-3 d-flex row mt-2 mb-2">
-                  Google Taiwan
-                </li>
-                <hr>
-                <li class="ml-3 font-weight-bold active">Lorem ipsum dolor sit amet consectetur
-                  adipisicingelit</li>
-                <li class="ml-3 d-flex row mt-2 mb-2">
-                  Google Taiwan
-                </li>
-                <hr>
-                <li class="ml-3 font-weight-bold active">Lorem ipsum dolor sit amet consectetur
-                  adipisicingelit</li>
-                <li class="ml-3 d-flex row mt-2 mb-2">
-                  Google Taiwan
-                </li>
+              <ul class="list-unstyled block__47528 mb-0 ml-4">
+                <div class="row mb-2">
+                  <span class=" font-weight-bold col-4">購買人姓名</span>
+                  <div class="col-8">
+                    <input type="text" class="useless w-75" name="name" value="好讚讚" disabled >
+                  </div>
+                </div>
+                <div class="row mb-2">
+                  <span class=" font-weight-bold col-4">購買人帳號</span>
+                  <div class="col-8">
+                    <input type="text" disabled class="useless w-75" name="name" value="erjgioehr168" >
+                  </div>
+                </div>
               </ul>
+              <hr/>
+              <ul class="list-unstyled block__47528 mb-0 ml-4">
+                <div class="row">
+                  <p class="col-11 text-right">單位：新台幣 NT$</p>
+                  <p class="font-weight-bold col-11 text-right lead">35000</p>
+                </div>
+              </ul>
+              <hr style="height:2px;color: #e2e2e2;background-color: #e2e2e2; "/>
+              <div class="row justify-content-right">
+                  <div class="col-12" id="payment-button"></div>
+              </div>
             </div>
           </div>
           <!-- leftslide end -->
-
-          <!-- right slide start -->
-          <div class="col-lg-6 mr-auto ">
-            <div class="pay-allow pt-lg-5">
-              <div class="head"></div>
-              <div class="border p-4 box pb-0">
-                <ul class="list-unstyled block__47528 mb-0">
-                  <figure class="figure">
-                    <figcaption>
-                      <h3 class="display-6 slide-h3">使用者 您好</h3>
-                    </figcaption>
-                  </figure>
-                  <li>0987987940</li>
-                  <li>a123@gmail.com</li>
-                  <div class="d-block text-right">
-                    <div class="text-right mr-3 fw-bold"><a href="#">修改會員資料<i
-                          class="fa-solid fa-chevron-right"></i></a></div>
-                  </div>
-                  <hr>
-                  <li>履歷總數 : 7/8</li>
-                  <li>預設履歷 : 爆肝工程師</li>
-                  <li>
-                    <div class="item input-group">
-                      <div class="d-flex">
-                        <p class="mr-1"> 開放設定 :</p>
-                        <div>
-                          <div class="input-group-prepend ">
-                            <input type="radio" name="CV" id="CVON"><span class="font-weight-normal text-body">開放履歷</span>
-                          </div>
-                          <div class="input-group-prepend ">
-                            <input type="radio" name="CV" id="CVOFF"><span
-                              class="font-weight-normal text-body">關閉履歷</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="d-block text-right">
-                      <div class="text-right mr-3 fw-bold"><a href="#">瀏覽所有履歷 <i
-                            class="fa-solid fa-chevron-right"></i></a></div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-           <!-- right slide end -->
         </div>
       </div>
     </section>

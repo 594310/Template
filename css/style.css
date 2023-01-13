@@ -2081,3 +2081,21 @@ h1, h2, h3, h4 {
   background-color: transparent;
   color: #0085FF;
 }
+.card-body,.card-footer{
+  padding: 0.1rem 1.25rem 0.1rem 1.25rem;
+}
+.card-footer {
+  border-top: 0;
+  }
+
+  input{
+    caret-color: #0085ff; /* 指定色 */
+    outline: none; /* 外框效果 */
+    border: #A4A4A4 solid 1px;
+    border-radius: 3px;
+}
+
+input.useless{
+  background-color: #eee;
+  color:#898989 ;
+}
